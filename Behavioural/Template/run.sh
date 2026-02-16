@@ -10,4 +10,4 @@ mkdir -p $OUT_DIR
 javac -d $OUT_DIR $(find . -name "*.java")
 
 # run using package-qualified main class
-java -cp $OUT_DIR Behavioural.Strategy.Main
+java -cp $OUT_DIR Behavioural.Template.Main
