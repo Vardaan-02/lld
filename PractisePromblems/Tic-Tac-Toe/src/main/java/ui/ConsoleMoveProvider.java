@@ -15,7 +15,7 @@ public class ConsoleMoveProvider implements MoveProvider {
 
     @Override
     public Move getMove(Player player) {
-        System.out.println(player.getName() + "'s turn. Enter row and col: ");
+        System.out.println("Enter row and col: ");
         int row = scanner.nextInt();
         int col = scanner.nextInt();
 

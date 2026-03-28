@@ -43,14 +43,15 @@ public class GameController {
         Player currentPlayer = gameEngine.getCurrentPlayer();
 
         try {
-            System.out.println(currentPlayer.getName() + "'s turn.");
             System.out.print("Do you want to undo the last move? (y/n): ");
             String undoChoice = scanner.next();
-
+            
             if (undoChoice.equalsIgnoreCase("y")) {
                 commandHistory.pop();
                 return;
             }
+            
+            System.out.println(currentPlayer.getName() + "'s turn.");
 
             Move move = currentPlayer.makeMove(gameEngine.getBoard());
 
